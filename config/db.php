@@ -10,9 +10,8 @@ try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     // Configurar el manejo de errores para que lance excepciones
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Conexión exitosa";
+    
 } catch (PDOException $e) {
-    // Si ocurre un error, mostrar el mensaje
-    echo "Error en la conexión: " . $e->getMessage();
+   
 }
 ?>
